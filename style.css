@@ -1,0 +1,104 @@
+/* GLOBAL */
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-family:"Press Start 2P", monospace;
+    overflow:hidden;
+    background:#000814;
+}
+
+/* BACKGROUND STARS */
+
+body{
+    background:
+            radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+            radial-gradient(2px 2px at 120px 80px, #fff, transparent),
+            radial-gradient(1px 1px at 200px 200px, #fff, transparent),
+            radial-gradient(2px 2px at 340px 140px, #fff, transparent),
+            radial-gradient(1px 1px at 50px 300px, #fff, transparent),
+            radial-gradient(2px 2px at 400px 40px, #fff, transparent),
+            radial-gradient(2px 2px at 60px 90px, #fff, transparent),
+            radial-gradient(1px 1px at 190px 150px, #fff, transparent),
+            radial-gradient(2px 2px at 300px 50px, #fff, transparent),
+            radial-gradient(1.5px 1.5px at 260px 260px, #fff, transparent),
+            #000814;
+    background-size: 400px 400px;
+    animation: stars 80s linear infinite;
+}
+
+@keyframes stars {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 -800px;
+    }
+}
+
+/* Main */
+.container{
+    position:relative;
+    z-index:5;
+    max-width:900px;
+    padding:20px;
+}
+
+h1{
+    font-size:22px;
+    margin-bottom:20px;
+    text-shadow:3px 3px #0f4700;
+}
+
+p{
+    font-size:12px;
+    color:#cfd6ff;
+    text-shadow:2px 2px #000;
+    line-height:1.7;
+}
+
+/* Button */
+button{
+    margin-top:35px;
+    padding:18px 30px;
+    font-family:"Press Start 2P";
+    font-size:12px;
+    background: #00a107;
+    color:white;
+    border:4px solid #05780b;
+    border-radius:6px;
+    cursor:pointer;
+    box-shadow:
+            0 6px #075a08,
+            0 0 18px rgb(15, 71, 0);
+    transition:transform .1s, background .2s, box-shadow .2s;
+    animation: breathe 2.2s infinite ease-in-out;
+}
+
+/* Glow */
+@keyframes breathe {
+    0%{ box-shadow:0 6px #0f4700, 0 0 10px rgb(5, 120, 11); }
+    50%{ box-shadow:0 6px #0f4700, 0 0 25px rgb(0, 161, 7); }
+    100%{ box-shadow:0 6px #0f4700, 0 0 10px rgb(5, 120, 11); }
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+button:active{
+    transform:translateY(4px) scale(.97);
+    box-shadow:0 2px #0f4700;
+}
+
+a{
+    text-decoration:none;
+}
