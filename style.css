@@ -13,7 +13,7 @@ body{
     color:white;
     font-family:"Press Start 2P", monospace;
     overflow:hidden;
-    background:#000814;
+    background: #000000;
 }
 
 /* BACKGROUND STARS */
@@ -21,16 +21,16 @@ body{
 body{
     background:
             radial-gradient(2px 2px at 20px 30px, #fff, transparent),
-            radial-gradient(2px 2px at 120px 80px, #fff, transparent),
+            radial-gradient(2px 2px at 120px 80px, #ffb5b5, transparent),
             radial-gradient(1px 1px at 200px 200px, #fff, transparent),
-            radial-gradient(2px 2px at 340px 140px, #fff, transparent),
-            radial-gradient(1px 1px at 50px 300px, #fff, transparent),
+            radial-gradient(2px 2px at 340px 140px, #9effd8, transparent),
+            radial-gradient(1px 1px at 50px 300px, #afffa9, transparent),
             radial-gradient(2px 2px at 400px 40px, #fff, transparent),
-            radial-gradient(2px 2px at 60px 90px, #fff, transparent),
+            radial-gradient(2px 2px at 60px 90px, #b6afff, transparent),
             radial-gradient(1px 1px at 190px 150px, #fff, transparent),
-            radial-gradient(2px 2px at 300px 50px, #fff, transparent),
+            radial-gradient(2px 2px at 300px 50px, #efc7ff, transparent),
             radial-gradient(1.5px 1.5px at 260px 260px, #fff, transparent),
-            #000814;
+            #000000;
     background-size: 400px 400px;
     animation: stars 80s linear infinite;
 }
@@ -53,7 +53,7 @@ body{
 }
 
 h1{
-    font-size:22px;
+    font-size:3rem;
     margin-bottom:20px;
     text-shadow:3px 3px #0f4700;
 }
@@ -61,7 +61,7 @@ h1{
 p{
     font-size:12px;
     color:#cfd6ff;
-    text-shadow:2px 2px #000;
+    text-shadow:2px 2px #000000;
     line-height:1.7;
 }
 
