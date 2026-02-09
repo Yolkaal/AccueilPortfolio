@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Shape';
+    src: url(static/fonts/Shape.ttf);
+}
+
+body{
+    /*text*/
+    color:#FFFFFF;
+    font-family: monospace;
+
+    /*stars*/
+    background:
+            radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+            radial-gradient(2px 2px at 120px 80px, #ffb5b5, transparent),
+            radial-gradient(1px 1px at 200px 200px, #fff, transparent),
+            radial-gradient(2px 2px at 340px 140px, #9effd8, transparent),
+            radial-gradient(1px 1px at 50px 300px, #afffa9, transparent),
+            radial-gradient(2px 2px at 400px 40px, #fff, transparent),
+            radial-gradient(2px 2px at 60px 90px, #b6afff, transparent),
+            radial-gradient(1px 1px at 190px 150px, #fff, transparent),
+            radial-gradient(2px 2px at 300px 50px, #efc7ff, transparent),
+            radial-gradient(1.5px 1.5px at 260px 260px, #fff, transparent),
+            #000000;
+    background-size: 400px 400px;
+    animation: stars 80s linear infinite;
+}
+
+@keyframes stars {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 -800px;
+    }
+}
+
+h1{
+    color: #ffd341;
+    font-family: "Press Start 2P", monospace;
+
+}
+
+main{
+    /*horizontal body display*/
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Shape, monospace;
+    background: #ffd18c;
+}
+
+aside a{
+    text-decoration: none;
+    color: #ff0059;
+    font-size: 200%;
+}
