@@ -4,20 +4,18 @@
 }
 
 body{
-    margin:0;
-    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:white;
+    color: rgb(255, 247, 102);
     font-family:"Press Start 2P", monospace;
-    overflow:hidden;
     background: #000000;
+    margin:0;
+    min-height:100vh;
 }
 
 /* BACKGROUND STARS */
-
 body{
     background:
             radial-gradient(2px 2px at 20px 30px, #fff, transparent),
@@ -46,6 +44,8 @@ body{
 
 /* Main */
 .container{
+    display:flex;
+    flex-direction:column;
     position:relative;
     z-index:5;
     max-width:900px;
@@ -53,13 +53,14 @@ body{
 }
 
 h1{
-    font-size:3rem;
+    line-height: 1.2em;
+    font-size:3vw; /* responsive relative au viewport */
     margin-bottom:20px;
-    text-shadow:3px 3px #0f4700;
+    text-shadow:3px 3px #9e7300;
 }
 
 p{
-    font-size:100%;
+    font-size:1vw; /* plus lisible sur petit écran */
     color:#cfd6ff;
     text-shadow:2px 2px #000000;
     line-height:1.7;
@@ -67,27 +68,34 @@ p{
 
 /* Button */
 button{
-    margin-top:35px;
-    padding:18px 30px;
+    margin:1vw;
+    padding:2vh 1vw;
     font-family:"Press Start 2P";
-    font-size:20px;
-    background: #00a107;
-    color:white;
-    border:4px solid #05780b;
+    font-size:0.8vw;
+    background: rgba(230, 218, 0, 0.9);
+    color: #000000;
+    border:4px solid #9e7300;
     border-radius:6px;
     cursor:pointer;
     box-shadow:
-            0 6px #075a08,
-            0 0 18px rgb(15, 71, 0);
+            0 6px #9e7300,
+            0 0 18px rgb(71, 51, 0);
     transition:transform .1s, background .2s, box-shadow .2s;
     animation: breathe 2.2s infinite ease-in-out;
 }
 
+.button{
+    margin-block:4vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 /* Glow */
 @keyframes breathe {
-    0%{ box-shadow:0 6px #0f4700, 0 0 10px rgb(5, 120, 11); }
-    50%{ box-shadow:0 6px #0f4700, 0 0 25px rgb(0, 161, 7); }
-    100%{ box-shadow:0 6px #0f4700, 0 0 10px rgb(5, 120, 11); }
+    0%{ box-shadow:0 6px #9e7300, 0 0 10px rgb(212, 201, 7); }
+    50%{ box-shadow:0 6px #9e7300, 0 0 25px rgb(212, 201, 7); }
+    100%{ box-shadow:0 6px #9e7300, 0 0 10px rgb(212, 201, 7); }
 }
 
 button:hover{
@@ -96,26 +104,25 @@ button:hover{
 
 button:active{
     transform:translateY(4px) scale(.97);
-    box-shadow:0 2px #0f4700;
+    box-shadow:0 2px #9e7300;
 }
 
 a{
     text-decoration:none;
 }
-/* LINKS */
 
+/* LINKS */
 .link-line{
-    color:#7cff9e;
-    font-size: 100%;
-    text-shadow:1px 1px #0f4700;
-    margin-block:2vh;
+    color: #fff1a9;
+    font-size: 1vw;
+    text-shadow:1px 1px #9e7300;
+    margin-block:1.5vh;
 }
 
 .pixel-link{
-    color:#7cff9e;
-    text-shadow:1px 1px #0f4700;
+    color: #fff1a9;
+    text-shadow:1px 1px #9e7300;
     position:relative;
-    padding:2px 4px;
     transition:color .2s, text-shadow .2s;
 }
 
@@ -127,7 +134,7 @@ a{
     bottom:-3px;
     width:100%;
     height:2px;
-    background:#00a107;
+    background: #d4c907;
     transform:scaleX(0);
     transform-origin:left;
     transition:transform .2s ease-out;
@@ -135,19 +142,47 @@ a{
 
 /* hover */
 .pixel-link:hover{
-    color:#afffa9;
+    color: #fff1a9;
     text-shadow:
-            0 0 6px rgba(0,161,7,.9),
-            1px 1px #0f4700;
+            0 0 6px rgba(230, 218, 0, 0.9),
+            1px 1px #9e7300;
 }
 
 .pixel-link:hover::after{
     transform:scaleX(1);
 }
 
-#links{
-    position:absolute;
-    left:50%;
-    top:50vh;
-    transform:translate(-50%, -50%);
+/* MEDIA QUERIES pour RESPONSIVE */
+@media (max-width: 768px){
+    h1{
+        font-size:5vw;
+        line-height:1.3em;
+    }
+    p{
+        font-size:2.5vw;
+    }
+    button{
+        font-size:2.5vw;
+        padding:2.5vh 4vw;
+        margin:2vw;
+    }
+    .link-line{
+        font-size:3vw;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size:6vw;
+    }
+    p{
+        font-size:3.5vw;
+    }
+    button{
+        font-size:3.5vw;
+        padding:3vh 5vw;
+    }
+    .link-line{
+        font-size:4vw;
+    }
 }
