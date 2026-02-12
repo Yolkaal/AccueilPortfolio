@@ -1,16 +1,17 @@
-/* ========== Variables ========== */
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap'); /* ========== Variables ========== */
 :root{
     --bg-color: #000000;
-    --accent: #ff0059;
-    --accent-2: #ffd341;
+    --accent: #dca55d;
+    --accent-2: #d30052;
     --muted: #cfcfcf;
-    --card-bg: rgba(255, 247, 102, 0.4);
+    --card-bg: rgba(255, 102, 130, 0.2);
+    --card-bg2: rgba(255, 212, 102, 0.4);
     --text-on-dark: #ffffff;
 
     --max-width: 1000px;
     --gap: 1.25rem;
     --radius: 20px;
-    --aside-width: 280px;
+    --aside-width: 10vw;
     --ui-pad: 1rem;
 }
 
@@ -37,6 +38,7 @@ html, body {
     font-style: normal;
     font-display: swap;
 }
+
 
 /* ========== Body & animated stars ========== */
 body{
@@ -91,7 +93,7 @@ header {
 }
 
 #logo_lounge { width:64px; height:64px; object-fit:contain; }
-#titre h1 { color: var(--accent-2); font-family: "Press Start 2P", monospace; margin:0; font-size:1.25rem; }
+#titre h1 { color: var(--accent-2); font-family: "Geo", monospace; margin:0; font-size:500%; }
 
 /* nav menu */
 #menu { display:flex; gap: 0.75rem; align-items:center; flex-wrap:wrap; }
@@ -136,7 +138,7 @@ aside {
     position: fixed;
     top: 50%;
     right: 1rem;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(30%);
     width: var(--aside-width);
     display:flex;
     flex-direction:column;
@@ -171,6 +173,7 @@ aside a {
     width:100%;
 }
 
+
 .titre_reseaux img {
     width: 48px;
     height: 48px;
@@ -180,15 +183,24 @@ aside a {
 }
 
 .titre_reseaux a:hover img,
-.titre_reseaux a:focus img { transform: scale(1.05); }
+.titre_reseaux a:focus img { transform: scale(1.05);}
 
 /* ========== Articles & Typography ========== */
-article {
-    margin-bottom: 1.25rem;
-    background: rgba(255,255,255,0.02);
-    padding: 0.9rem;
-    border-radius: 12px;
-    backdrop-filter: blur(2px);
+
+.MainText {
+    padding: 3vh;
+    margin: var(--gap);
+    transition: transform 0.3s ease;
+    border: 3px solid var(--accent-2);
+    border-radius: var(--radius);
+}
+
+.MainText:hover{
+    transform: translateY(-5px);
+    border: 3px solid var(--accent);
+    h1{
+        color: var(--accent);
+    }
 }
 
 article h1 {
