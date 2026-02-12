@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap'); /* ========== Variables ========== */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* ========== Variables ========== */
 :root{
     --bg-color: #000000;
     --accent: #dca55d;
@@ -83,7 +85,8 @@ header {
     align-items:center;
     justify-content:space-between;
     gap: var(--gap);
-    padding: 1rem clamp(1rem, 4vw, 2rem);
+    padding: 1rem clamp(1rem, 4vw, 2rem) 2rem;
+    border-bottom: 0.2rem solid var(--accent);
 }
 
 #titre {
@@ -93,7 +96,7 @@ header {
 }
 
 #logo_lounge { width:64px; height:64px; object-fit:contain; }
-#titre h1 { color: var(--accent-2); font-family: "Geo", monospace; margin:0; font-size:500%; }
+#titre h1 { color: var(--accent); font-family: "Audiowide", monospace; margin:0; font-size:3vh; }
 
 /* nav menu */
 #menu { display:flex; gap: 0.75rem; align-items:center; flex-wrap:wrap; }
@@ -232,6 +235,7 @@ footer a { color: var(--muted); text-decoration:underline; cursor:pointer; }
 /* ========== Responsive ========== */
 @media (max-width: 900px){
     main { padding-right: 0; }
+    header {flex-direction: column}
     aside {
         position: relative;
         transform: none;
@@ -239,5 +243,15 @@ footer a { color: var(--muted); text-decoration:underline; cursor:pointer; }
         margin-top: 1rem;
         max-height: none;
         overflow-y: visible;
+        right: 0;
+        padding: 0;
+        gap: 0;
+        border-radius: 0;
+        background: var(--card-bg);
+        border-left:none;
+        border-top: 5px solid var(--accent);
+        border-bottom: 5px solid var(--accent);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+        color: var(--accent);
     }
 }
