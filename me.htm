@@ -1,42 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>Yolkaal's shelter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styleAboutMe.css">
+    <link rel="stylesheet" href="static/css/variables.css">
+    <link rel="stylesheet" href="static/css/HeaderStyle.css">
+    <link rel="stylesheet" href="static/css/FooterStyle.css">
+    <link rel="stylesheet" href="static/css/GenrericBody.css">
+    <link rel="stylesheet" href="static/css/AboutMeStyle.css">
 </head>
 <body>
-    <header>
-        <div id="titre">
-            <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
-            <h1>Yolkaal's Lounge</h1>
+
+
+
+
+
+
+
+<header>
+    <div id="titre">
+        <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
+        <h1>Yolkaal's Shelter</h1>
+    </div>
+    <nav id="menu">
+
+        <div class="titre_menu">
+            <a href="index.html" class="menu__link">Home</a>
         </div>
-        <nav id="menu">
+        <div class="titre_menu">
+            <a href="games.html" class="menu__link">Games</a>
+        </div>
+        <div class="titre_menu">
+            <a href="reviews.html" class="menu__link">Reviews</a>
+        </div>
+        <div class="titre_menu">
+            <a href="addons.html" class="menu__link">Mods</a>
+        </div>
+        <div class="titre_menu">
+            <a href="design.html" class="menu__link">3D & 2D art</a>
+        </div>
+        <div class="titre_menu">
+            <a href="me.htm" class="menu__link">Me</a>
+        </div>
 
-            <div class="titre_menu">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="titre_menu">
-                <a href="games.html">Games</a>
-            </div>
-            <div class="titre_menu">
-                <a href="reviews.html">Reviews</a>
-            </div>
-            <div class="titre_menu">
-                <a href="addons.html">Mods</a>
-            </div>
-            <div class="titre_menu">
-                <a href="design.html">3D & 2D art</a>
-            </div>
-            <div class="titre_menu">
-                <a href="who-I-am.htm">Me</a>
-            </div>
+    </nav>
+</header>
 
-        </nav>
-    </header>
-    <main>
+
+
+
+
+<main>
         <section>
             <article class="MainText">
                 <h1>Who I Am</h1>
@@ -159,37 +174,37 @@
                 <div class="titre_reseaux">
                     <a href="https://www.twitch.tv/alpharogue71">
                         Twitch:<br>
-                        <img src="static/img/twitch.svg" alt="twitch_logo">
+                        <img src="static/img/media_icons/twitch.svg" alt="twitch_logo">
                     </a>
                 </div>
                 <div class="titre_reseaux">
                     <a href="https://discord.gg/MN6FyRs8WR">
                         Discord:<br>
-                        <img src="static/img/discord.svg" alt="discord_logo">
+                        <img src="static/img/media_icons/discord.svg" alt="discord_logo">
                     </a>
                 </div>
                 <div class="titre_reseaux">
                     <a href="https://www.instagram.com/alpha_rogue71">
                         Instagram:<br>
-                        <img src="static/img/instagram.svg" alt="instagram_logo">
+                        <img src="static/img/media_icons/instagram.svg" alt="instagram_logo">
                     </a>
                 </div>
                 <div class="titre_reseaux">
                     <a href="https://x.com/AlphaRogue71">
                         X: <br>
-                        <img src="static/img/x.svg" alt="x_logo">
+                        <img src="static/img/media_icons/x.svg" alt="x_logo">
                     </a>
                 </div>
                 <div class="titre_reseaux">
                     <a href="https://github.com/AlphaROwOgue71">
                         GitHub:<br>
-                        <img src="static/img/github.svg" alt="github_logo">
+                        <img src="static/img/media_icons/github.svg" alt="github_logo">
                     </a>
                 </div>
                 <div class="titre_reseaux">
                     <a href="https://steamcommunity.com/profiles/76561198827252239/">
                         Steam:<br>
-                        <img src="static/img/steam.svg" alt="steam_logo">
+                        <img src="static/img/media_icons/steam.svg" alt="steam_logo">
                     </a>
                 </div>
             </article>
@@ -198,7 +213,7 @@
 
     <footer>
         <div>
-            © 2024 Gonzalez Angelo. All right reserved.
+            © <span id="year"></span> Gonzalez Angelo. All right reserved.
         </div>
         <div>
             <a>
@@ -207,4 +222,8 @@
         </div>
     </footer>
 </body>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </html>

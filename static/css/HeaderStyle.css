@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:var(--spacing-base);
+    border-bottom: 0.2rem solid var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#titre {
+    display:flex;
+    align-items:center;
+    gap: var(--headerGap);
+}
+
+#logo_lounge {
+    width:5vw;
+    height:5vw;
+    object-fit:contain;
+}
+
+#titre h1 {
+    color: var(--color-primary);
+    font-family: "Audiowide", monospace;
+    margin:0;
+    font-size:5vh;
+    text-shadow: 5px 5px 1px var(--color-secondary-shadow);
+}
+
+
+/* nav menu */
+#menu { display:flex; gap: 0.75rem; align-items:center; flex-wrap:wrap; }
+
+.titre_menu{
+    padding:var(--spacing-base);
+}
+
+.menu__link {
+    text-decoration: none;
+    display:inline-block;
+    color: var(--color-primary);
+    line-height: 2;
+    position: relative;
+}
+
+.menu__link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    transition: transform .2s, opacity .2s;
+    opacity: 0;
+}
+
+.menu__link:hover::before {
+    transform: translateY(-.25rem);
+    opacity: 1;
+}

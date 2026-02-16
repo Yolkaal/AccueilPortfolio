@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Yolkaal's shelter</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <h1>Bienvenue dans <br /> mon univers.</h1>
-    <p>
-        Ici commence votre exploration.<br />
-        Vous y trouverez mes projets,<br />
-        mes compétences et les quêtes qui ont forgé mon parcours professionnel. <br />
-        Installez-vous, l’aventure va débuter.
-    </p>
-    <div class="button">
-        <a href="who-I-am.htm">
-            <button>PORTFOLIO CLASSIQUE</button>
-        </a>
-        <a href="https://portfolio.yolkaal.ovh">
-            <button>PRESS START (en construction)</button>
-        </a>
-    </div>
-    <div id="links">
-        <p class="link-line">
-            <a class="pixel-link" href="https://github.com/Yolkaal"> GITHUB : Yolkaal</a>
-        </p>
-        <p class="link-line">
-            <a class="pixel-link" href="https://www.linkedin.com/in/angelo-gonzalez-853300347/">LINKEDIN : Angelo Gonzalez</a>
-        </p>
-        <p class="link-line">
-            <a class="pixel-link important-link" href="CV.pdf">Voir le CV</a>
-        </p>
-    </div>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yolkaal's shelter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/variables.css">
+        <link rel="stylesheet" href="static/css/HeaderStyle.css">
+        <link rel="stylesheet" href="static/css/FooterStyle.css">
+        <link rel="stylesheet" href="static/css/GenrericBody.css">
+        <link rel="stylesheet" href="static/css/IndexStyle.css">
+    </head>
+    <body>
+
+
+
+
+
+
+
+        <header>
+            <div id="titre">
+                <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
+                <h1>Yolkaal's Shelter</h1>
+            </div>
+            <nav id="menu">
+
+                <div class="titre_menu">
+                    <a href="index.html" class="menu__link">Home</a>
+                </div>
+                <div class="titre_menu">
+                    <a href="games.html" class="menu__link">Games</a>
+                </div>
+                <div class="titre_menu">
+                    <a href="reviews.html" class="menu__link">Reviews</a>
+                </div>
+                <div class="titre_menu">
+                    <a href="addons.html" class="menu__link">Mods</a>
+                </div>
+                <div class="titre_menu">
+                    <a href="design.html" class="menu__link">3D & 2D art</a>
+                </div>
+                <div class="titre_menu">
+                    <a href="me.htm" class="menu__link">Me</a>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+
+
+
+
+
+        <main>
+                <h1>Welcome in my Home</h1>
+                <div class="presentation">
+                    <img src="static/img/profile_pic_rounded.png" alt="yolkaal" id="profilePic">
+
+                    <p>
+                        Ici commence votre exploration. <br>
+                        Vous y trouverez mes projets, mes compétences et les quêtes qui ont forgé mon parcours professionnel. <br>
+                        Installez-vous, l’aventure va débuter. <br>
+                    </p>
+                </div>
+
+                <div class="button">
+                    <a href="me.htm">
+                        <button>PORTFOLIO CLASSIQUE</button>
+                    </a>
+                    <a href="https://portfolio.yolkaal.ovh">
+                        <button>PRESS START (WIP)</button>
+                    </a>
+                </div>
+                <div id="links">
+                    <p class="link-line">
+                        <a class="pixel-link" href="https://github.com/Yolkaal"> GITHUB : Yolkaal</a>
+                    </p>
+                    <p class="link-line">
+                        <a class="pixel-link" href="https://www.linkedin.com/in/angelo-gonzalez-853300347/">LINKEDIN : Angelo Gonzalez</a>
+                    </p>
+                    <p class="link-line">
+                        <a class="pixel-link important-link" href="static/CV.pdf">Voir le CV</a>
+                    </p>
+                </div>
+        </main>
+
+        <footer>
+            <div>
+                © <span id="year"></span> Gonzalez Angelo. All right reserved.
+            </div>
+            <div>
+                <a>
+                    Contact
+                </a>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </html>

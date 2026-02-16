@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #f6d38b;
+    --color-secondary: #cfd6ff;
+    --color-primary-shadow: #6a5636;
+    --color-secondary-shadow: #414453;
+    --font-title-main:"Audiowide", monospace;
+    --font-title-secondary: "Press Start 2P", monospace;
+    --font-main: 'Arial', sans-serif;
+    --spacing-base: 1vw;
+
+    --headerGap : 2vw;
+}
