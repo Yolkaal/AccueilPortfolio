@@ -12,8 +12,6 @@ body {
     font-family: "Electrolize", monospace;
     color: white;
     font-size : clamp(1.5rem, 1vw, 3rem);
-    width: 100vw;
-    height: 100vh;
     background-attachment: fixed;
 }
 
