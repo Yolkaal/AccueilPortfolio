@@ -34,7 +34,7 @@ aside {
 /* ====== ARTICLE ====== */
 
 article {
-    margin: 0 15rem 5rem 5rem;
+    margin: 0 4vw 5vw 5vw;
     padding: 2rem;
     border-left: 2px solid var(--color-primary);
     border-radius: 10px;
@@ -129,42 +129,89 @@ a {
     transition: width 0.5s ease-in-out;
 }
 
-
-
-
-
-
-/* ============================= */
-/* ========= MOBILE ========= */
-/* ============================= */
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     main {
         flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    article {
+        margin: 0 0 2rem 0;
+        padding: 1.5rem;
+        border-left: none;
+        border-top: 2px solid var(--color-primary);
     }
 
     aside {
-        position: static;
-        width: 100%;
-
-        display: grid;                       /* 👈 on passe en grid */
-        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-
-        justify-items: center;              /* centre horizontalement */
-        align-items: center;
-
-        padding: 1.5rem;
-
-        border-radius: 0;
+        position: relative;
+        top: 0;
+        border-radius: 20px;
+        border-right: 3px solid var(--color-primary);
+        margin-top: 2rem;
     }
 
-    .titre_reseaux {
-        width: 100%;
+    /* Boutons */
+    .button {
+        justify-content: center;
+    }
+
+    .text_button {
+        font-size: 0.95rem;
+    }
+
+    /* Titres */
+    .MainText h1 {
+        font-size: 1.6rem;
         text-align: center;
     }
 
+    /* Réseaux */
     .titre_reseaux img {
-        height: 35px;
+        height: 32px;
     }
 }
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    article {
+        padding: 1.2rem;
+    }
+
+    .MainText h1 {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        gap: 0.3rem;
+    }
+
+    .icon_cont {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    aside {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
