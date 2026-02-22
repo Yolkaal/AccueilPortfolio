@@ -64,3 +64,69 @@ header {
     transform: translateY(-.25rem);
     opacity: 1;
 }
+
+/* Tablettes */
+@media screen and (max-width: 1024px) {
+
+    header{
+        padding: calc(var(--spacing-base) * 0.8);
+    }
+
+    #logo_lounge{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #titre h1{
+        font-size: 4vh;
+        text-shadow: 3px 3px 1px var(--color-primary-shadow);
+    }
+
+    #menu{
+        gap: 0.5rem;
+    }
+
+    .menu__link{
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 600px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #titre{
+        gap: 10px;
+    }
+
+    #logo_lounge{
+        width: 14vw;
+        height: 14vw;
+    }
+
+    #titre h1{
+        font-size: 3vh;
+        text-shadow: 2px 2px 1px var(--color-primary-shadow);
+    }
+
+    #menu{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .menu__link{
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .menu__link::before{
+        bottom: -0.3rem;
+    }
+}

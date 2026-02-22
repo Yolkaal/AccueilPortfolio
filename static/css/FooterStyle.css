@@ -23,3 +23,30 @@ footer a:hover {
     color: var(--color-secondary);
     transform: translateY(-2px);
 }
+/* Tablettes */
+@media screen and (max-width: 1024px) {
+
+    footer{
+        height: auto;
+        font-size: 85%;
+        padding: 0.8rem clamp(1rem, 4vw, 1.5rem);
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 600px) {
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        height: auto;
+        text-align: center;
+        font-size: 80%;
+        padding: 1rem;
+    }
+
+    footer a{
+        font-size: 0.9em;
+    }
+}

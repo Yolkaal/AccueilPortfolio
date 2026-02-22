@@ -21,6 +21,7 @@ main{
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
     padding:var(--spacing-base);
     border-radius: 50px;
+    margin-bottom: 5rem;
 }
 
 .presentation>p{
@@ -210,38 +211,77 @@ p{
 .button:hover .button_lg::after {
     background-color: #fff;
 }
+@media screen and (max-width: 1024px) {
 
+    #profilePic{
+        width: 18vw;
+    }
 
-@media (max-width: 768px){
     h1{
-        font-size:5vw;
-        line-height:1.3em;
+        font-size: 4vw;
+        margin-top: 80px;
     }
-    p{
-        font-size:2.5vw;
-    }
-    button{
-        font-size:2.5vw;
-        padding:2.5vh 4vw;
-        margin:2vw;
-    }
+
+    p,
     .link-line{
-        font-size:3vw;
+        font-size: 2vw;
+    }
+
+    .presentation{
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .presentation > p{
+        text-align: center;
     }
 }
 
-@media (max-width: 480px){
+/* Mobiles */
+@media screen and (max-width: 600px) {
+
+    main{
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    #profilePic{
+        width: 35vw;
+    }
+
     h1{
-        font-size:6vw;
+        font-size: 6vw;
+        margin-top: 60px;
+        text-shadow: 2px 2px var(--color-secondary-shadow);
     }
+
     p{
-        font-size:3.5vw;
+        font-size: 3.8vw;
+        line-height: 1.6;
+        text-shadow: 1px 1px var(--color-secondary-shadow);
     }
-    button{
-        font-size:3.5vw;
-        padding:3vh 5vw;
-    }
+
     .link-line{
-        font-size:4vw;
+        font-size: 3.5vw;
+    }
+
+    .presentation{
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .presentation > p{
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .button{
+        font-size: 12px;
+    }
+
+    .button_lg{
+        padding: 12px 18px;
     }
 }
