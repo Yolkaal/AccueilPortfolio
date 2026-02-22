@@ -28,7 +28,7 @@ header {
     font-family: "Audiowide", monospace;
     margin:0;
     font-size:5vh;
-    text-shadow: 5px 5px 1px var(--color-secondary-shadow);
+    text-shadow: 5px 5px 1px var(--color-primary-shadow);
 }
 
 

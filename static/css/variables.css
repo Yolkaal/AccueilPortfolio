@@ -1,12 +1,13 @@
 :root {
-    --color-primary: #f6d38b;
-    --color-secondary: #cfd6ff;
-    --color-primary-shadow: #6a5636;
-    --color-secondary-shadow: #414453;
+    --color-primary: #b9ffec;
+    --color-secondary: #ffe9cf;
+    --color-primary-shadow: #1c3637;
+    --color-secondary-shadow: #4a443f;
     --font-title-main:"Audiowide", monospace;
     --font-title-secondary: "Press Start 2P", monospace;
     --font-main: 'Arial', sans-serif;
     --spacing-base: 1vw;
-
     --headerGap : 2vw;
+    --active: 0;
+    --title-color: linear-gradient(#ffc684, #9d93ff);
 }
