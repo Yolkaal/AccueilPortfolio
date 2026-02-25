@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yolkaal's shelter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/variables.css">
+    <link rel="stylesheet" href="static/css/HeaderStyle.css">
+    <link rel="stylesheet" href="static/css/FooterStyle.css">
+    <link rel="stylesheet" href="static/css/GenrericBody.css">
+    <link rel="stylesheet" href="static/css/GameStyle.css">
+</head>
+<body>
+
+
+
+
+
+
+
+<header>
+    <div id="titre">
+        <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
+        <h1>Yolkaal's Shelter</h1>
+    </div>
+    <nav id="menu">
+
+        <div class="titre_menu">
+            <a href="index.html" class="menu__link">Home</a>
+        </div>
+        <div class="titre_menu">
+            <a href="projects.html" class="menu__link">Projects</a>
+        </div>
+        <div class="titre_menu">
+            <a href="reviews.html" class="menu__link">Reviews</a>
+        </div>
+        <div class="titre_menu">
+            <a href="design.html" class="menu__link">3D & 2D art</a>
+        </div>
+        <div class="titre_menu">
+            <a href="me.htm" class="menu__link">Me</a>
+        </div>
+
+    </nav>
+</header>
+
+
+
+<main>
+
+    <section class="gameArticles">
+        <article>
+            <img src="static/img/Illustrations_Projets/k_98v5.png" alt="cover_fotc">
+            <div>
+                <h2>
+                    Fate of The Click
+                </h2>
+                <p>
+                    Vampire survivor développé à l'occasion de la Code Game Jam 2026.
+                    Arrivé 6ème sur 90 équipes, le jeu est disponnible sur itch.io.
+                </p>
+                <a href="https://gandalf0207.itch.io/fate-of-the-click">
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Discover the game</span>
+                        </span>
+                    </button>
+                </a><br>
+                <a href="https://gandalf0207.itch.io/fate-of-the-click">
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Learn about the project</span>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </article>
+        <article>
+            <img src="static/img/Illustrations_Projets/spellnblade.png" alt="cover_fotc">
+            <div>
+                <h2>
+                    Spell 'n Blade
+                </h2>
+                <p>
+                    Mon projet principal. Un jeu basé dans un univers médieval fantasy avec un aspect mmorpg axé immersion, couplé à un héro shooter et un jeu de cartes.<br>
+                    Pour l'instant le projet est à un stade de conception et de design.<br><br>
+                    date de sortie à définir
+                </p>
+                <a href="https://gandalf0207.itch.io/fate-of-the-click">
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Learn about the project</span>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </article>
+        <article>
+            <img src="static/img/Illustrations_Projets/Lycanth.png" alt="cover_fotc">
+            <div>
+                <h2>
+                    Lycanth
+                </h2>
+                <p>
+                    Lycanth est un mod minecraft visant à apporter de la fantasy au jeu.<br>
+                    Ce mod à pour but d'ajouter des loups garous (appelés lycanths) ainsi qu'une nouvelle dimension au jeu avec un lore complet et de nouvelles méchaniques.<br><br>
+                    date de sortie à définir.
+                </p>
+                <a href="https://gandalf0207.itch.io/fate-of-the-click">
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Learn about the project</span>
+                        </span>
+                    </button>
+                </a><br>
+                <a href="#">
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Get it on modrinth</span>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <div>
+        © <span id="year"></span> Gonzalez Angelo. All right reserved.
+    </div>
+    <div>
+        <a>
+            Contact
+        </a>
+    </div>
+</footer>
+</body>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</html>
