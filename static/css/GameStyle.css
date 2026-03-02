@@ -3,12 +3,14 @@
     flex-direction: row;
     width: 70vw;
     margin-inline: auto;
-    margin-top: 3vw;
+    margin: 3rem auto;
+    aspect-ratio: auto;
 }
 
 .gameArticles article img{
     width: 15vw;
-    border-radius:30px;
+    margin-block: auto;
+    border-radius:1rem;
     margin-right: 2vw;
 }
 
@@ -17,7 +19,9 @@
     padding: 2vw;
     border-left: solid 5px var(--color-primary);
     border-radius: 30px;
+    width: 100%;
 }
+
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -139,4 +143,39 @@
 
 .button:hover .button_lg::after {
     background-color: #fff;
+}
+
+    /* =========================
+       TABLETTE (≤ 900px)
+       ========================= */
+
+@media (max-width: 900px) {
+
+    .gameArticles article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gameArticles article img {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 5vh;
+    }
+
+    .gameArticles article div {
+        border-left: none;
+        border-top: solid 5px var(--color-primary);
+        padding: 1.2rem;
+    }
+
+    /* Boutons plus confortables au toucher */
+    .button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .button_lg {
+        padding: 14px 24px;
+    }
 }

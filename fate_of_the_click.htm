@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yolkaal's shelter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/variables.css">
+    <link rel="stylesheet" href="static/css/HeaderStyle.css">
+    <link rel="stylesheet" href="static/css/FooterStyle.css">
+    <link rel="stylesheet" href="static/css/GenrericBody.css">
+    <link rel="stylesheet" href="static/css/fateoftheclick.css">
+</head>
+<body>
+<header>
+    <div id="titre">
+        <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
+        <h1>Yolkaal's Shelter</h1>
+    </div>
+    <nav id="menu">
+
+        <div class="titre_menu">
+            <a href="index.html" class="menu__link">Home</a>
+        </div>
+        <div class="titre_menu">
+            <a href="projects.html" class="menu__link">Projects</a>
+        </div>
+        <div class="titre_menu">
+            <a href="reviews.html" class="menu__link">Reviews</a>
+        </div>
+        <div class="titre_menu">
+            <a href="design.html" class="menu__link">3D & 2D art</a>
+        </div>
+        <div class="titre_menu">
+            <a href="me.htm" class="menu__link">Me</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <H1>Fate Of The Click V1</H1>
+        <article>
+            <div class="carousel">
+                <div class="slides" id="slides">
+                    <img src="static/img/Illustrations_Projets/fateofclickcover.png">
+                    <img src="static/img/Illustrations_Projets/fateofclickMenu.png">
+                    <img src="static/img/Illustrations_Projets/fateofclickig.png">
+                    <img src="static/img/Illustrations_Projets/fateofclickendgame.png">
+                </div>
+
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+        </article>
+        <article class="descriptor">
+            <img src="static/img/Illustrations_Projets/cgj26affiche.jpg">
+            <div>
+                <h2>Context and project's presentation</h2>
+                <p>
+                    This project was made for the Code Game Jam 2026.
+                    With my team composed of 4 friends in first year of IT, we had 30 hours to create a game from scratch on the theme "do clicks" or "click party".
+                    We decided to make a game about a folder named Foldy. The goal is to survive to waves of mouse pointers which want to click on you and discover your files.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="descriptor">
+            <div>
+                <h2>Enemies and bosses</h2>
+                <p>
+                    Clippy
+                    Sniper Cursor
+                    Classic Cursor
+                </p>
+            </div>
+        </article>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <div>
+        © <span id="year"></span> Gonzalez Angelo. All right reserved.
+    </div>
+    <div>
+        <a>
+            Contact
+        </a>
+    </div>
+</footer>
+</body>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    let index = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+
+    function updateCarousel() {
+    slides.style.transform = `translateX(-${index * 32}vw)`;
+    }
+
+    function nextSlide() {
+    index++;
+    if (index >= totalSlides) index = 0;
+    updateCarousel();
+    }
+
+    function prevSlide() {
+    index--;
+    if (index < 0) index = totalSlides - 1;
+    updateCarousel();
+    }
+</script>
+</html>
