@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
 header {
     display:flex;
@@ -25,7 +26,7 @@ header {
 
 #titre h1 {
     color: var(--color-primary);
-    font-family: "Audiowide", monospace;
+    font-family: "Rubik Doodle Shadow", monospace;
     margin:0;
     font-size:5vh;
     text-shadow: 5px 5px 1px var(--color-primary-shadow);

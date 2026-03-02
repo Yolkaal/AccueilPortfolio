@@ -24,21 +24,21 @@ body::before {
     pointer-events: none;
 
     background:
-            radial-gradient(2px 2px at 20px 30px, #fff 50%, transparent 51%),
-            radial-gradient(2px 2px at 120px 80px, #ffb5b5 50%, transparent 51%),
-            radial-gradient(1px 1px at 200px 200px, #fff 50%, transparent 51%),
-            radial-gradient(2px 2px at 340px 140px, #9effd8 50%, transparent 51%),
-            radial-gradient(1px 1px at 50px 300px, #afffa9 50%, transparent 51%),
-            radial-gradient(2px 2px at 400px 40px, #fff 50%, transparent 51%),
-            radial-gradient(2px 2px at 60px 90px, #b6afff 50%, transparent 51%),
-            radial-gradient(1px 1px at 190px 150px, #fff 50%, transparent 51%),
-            radial-gradient(2px 2px at 300px 50px, #efc7ff 50%, transparent 51%),
-            radial-gradient(1.5px 1.5px at 260px 260px, #fff 50%, transparent 51%);
+            radial-gradient(2px 2px at 20px 30px, #fff 50%, transparent 51%) 0 0 / 400px 400px,
+            radial-gradient(2px 2px at 120px 80px, #ffb5b5 50%, transparent 51%) 0 0 / 550px 550px,
+            radial-gradient(1px 1px at 200px 200px, #fff 50%, transparent 51%) 0 0 / 600px 600px,
+            radial-gradient(2px 2px at 340px 140px, #9effd8 50%, transparent 51%) 0 0 / 470px 470px,
+            radial-gradient(1px 1px at 50px 300px, #afffa9 50%, transparent 51%) 0 0 / 520px 520px,
+            radial-gradient(2px 2px at 400px 40px, #fff 50%, transparent 51%) 0 0 / 680px 680px,
+            radial-gradient(2px 2px at 60px 90px, #b6afff 50%, transparent 51%) 0 0 / 730px 730px,
+            radial-gradient(1px 1px at 190px 150px, #fff 50%, transparent 51%) 0 0 / 620px 620px,
+            radial-gradient(2px 2px at 300px 50px, #efc7ff 50%, transparent 51%) 0 0 / 540px 540px,
+            radial-gradient(1.5px 1.5px at 260px 260px, #fff 50%, transparent 51%) 0 0 / 590px 590px;
 
-    background-size: 400px 400px;
-    animation: stars 40s linear infinite;
+    animation: stars 60s linear infinite;
     opacity: 0.95;
     mix-blend-mode: screen;
+    will-change: background-position;
 }
 
 main{
