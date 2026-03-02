@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="static/css/HeaderStyle.css">
     <link rel="stylesheet" href="static/css/FooterStyle.css">
     <link rel="stylesheet" href="static/css/GenrericBody.css">
-    <link rel="stylesheet" href="static/css/AboutMeStyle.css">
+    <link rel="stylesheet" href="static/css/design.css">
+    <link rel="stylesheet" href="static/css/carroussel.css">
 </head>
 <body>
-
-
-
-
-
-
-
 <header>
     <div id="titre">
         <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
@@ -50,9 +44,43 @@
 
 <main>
 
+    <article>
+        <div class="carousel">
+            <div class="slides">
+                <img src="static/img/Illustrations_Projets/Portfolio%20WebGL%20minecraft.png">
+                <img src="static/img/Illustrations_Projets/mcmap1.png">
+                <img src="static/img/Illustrations_Projets/mcmap3.png">
+                <img src="static/img/Illustrations_Projets/Portfolio%20WebGL%20minecraft%202.png">
 
+            </div>
 
+            <button class="prev buttonCarroussel" onclick="prevSlide()">❮</button>
+            <button class="next buttonCarroussel" onclick="nextSlide()">❯</button>
+        </div>
+    </article>
+    <article>
+        <div class="carousel">
+            <div class="slides">
+                <img src="static/img/Illustrations_Projets/mcskin1.png">
+                <img src="static/img/Illustrations_Projets/mcskin2.png">
+            </div>
 
+            <button class="prev buttonCarroussel" onclick="prevSlide()">❮</button>
+            <button class="next buttonCarroussel" onclick="nextSlide()">❯</button>
+        </div>
+    </article>
+    <article>
+        <div class="carousel">
+            <div class="slides">
+                <img src="static/img/Illustrations_Projets/thefinalsmask.webp">
+                <img src="static/img/Illustrations_Projets/thefinals.png">
+                <img src="static/img/Illustrations_Projets/thefinals3.png">
+            </div>
+
+            <button class="prev buttonCarroussel" onclick="prevSlide()">❮</button>
+            <button class="next buttonCarroussel" onclick="nextSlide()">❯</button>
+        </div>
+    </article>
 
 </main>
 
@@ -70,5 +98,28 @@
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll(".carousel").forEach(carousel => {
+        let index = 0;
+        const slides = carousel.querySelector(".slides");
+        const images = slides.querySelectorAll("img");
+        const totalSlides = images.length;
+
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        carousel.querySelector(".next").addEventListener("click", () => {
+            index++;
+            if (index >= totalSlides) index = 0;
+            updateCarousel();
+        });
+
+        carousel.querySelector(".prev").addEventListener("click", () => {
+            index--;
+            if (index < 0) index = totalSlides - 1;
+            updateCarousel();
+        });
+    });
 </script>
 </html>
