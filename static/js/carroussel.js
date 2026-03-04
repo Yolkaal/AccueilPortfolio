@@ -1,28 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const yearElement = document.getElementById("year");
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
+
+    // Update footer year
+    const year = document.getElementById("year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
     }
 
-    const slides = document.getElementById("slides");
-    if (!slides) return;
+    // Initialize each carousel independently
+    document.querySelectorAll(".carousel").forEach(carousel => {
+        let index = 0;
 
-    let index = 0;
-    const totalSlides = slides.children.length;
+        const slides = carousel.querySelector(".slides");
+        if (!slides) return;
 
-    function updateCarousel() {
-        slides.style.transform = `translateX(-${index * 32}vw)`;
-    }
+        const images = slides.querySelectorAll("img");
+        const totalSlides = images.length;
+        if (totalSlides === 0) return;
 
-    window.nextSlide = function () {
-        index++;
-        if (index >= totalSlides) index = 0;
-        updateCarousel();
-    };
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
 
-    window.prevSlide = function () {
-        index--;
-        if (index < 0) index = totalSlides - 1;
-        updateCarousel();
-    };
+        const nextBtn = carousel.querySelector(".next");
+        const prevBtn = carousel.querySelector(".prev");
+        if (!nextBtn || !prevBtn) return;
+
+        nextBtn.addEventListener("click", () => {
+            index++;
+            if (index >= totalSlides) index = 0;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener("click", () => {
+            index--;
+            if (index < 0) index = totalSlides - 1;
+            updateCarousel();
+        });
+    });
 });
