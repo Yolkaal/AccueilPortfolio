@@ -96,30 +96,5 @@
 </footer>
 </body>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.querySelectorAll(".carousel").forEach(carousel => {
-        let index = 0;
-        const slides = carousel.querySelector(".slides");
-        const images = slides.querySelectorAll("img");
-        const totalSlides = images.length;
-
-        function updateCarousel() {
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        carousel.querySelector(".next").addEventListener("click", () => {
-            index++;
-            if (index >= totalSlides) index = 0;
-            updateCarousel();
-        });
-
-        carousel.querySelector(".prev").addEventListener("click", () => {
-            index--;
-            if (index < 0) index = totalSlides - 1;
-            updateCarousel();
-        });
-    });
-</script>
+<script src="static/js/carroussel.js"></script>
 </html>
