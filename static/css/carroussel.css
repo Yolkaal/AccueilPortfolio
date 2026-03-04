@@ -14,8 +14,8 @@
 }
 
 .slides img {
-    width: 32vw;
-    height: 18vw;
+    width: 64vw;
+    height: 36vw;
     object-fit: cover;
 }
 
