@@ -58,10 +58,12 @@
         <article class="descriptor">
             <img src="static/img/Illustrations_Projets/iutm.png">
             <div>
-                <h2>Context and project's presentation</h2>
+                <h2>Context and Overview</h2>
                 <p>
-                    This project was made in a scolar context.
-                    The goal was to learn how to implement user interfaces in java and how to use Unit Tests and Design Patterns.
+                    This project aimed to re-implement the Pokémon Trading Card Game in Java and was developed in an academic context. <br>
+                    Its main goal was to learn how to implement user interfaces in Java,<br>
+                    as well as how to apply Unit Testing and common Design Patterns effectively.
+
                 </p>
             </div>
 
@@ -71,33 +73,53 @@
             <div>
                 <h2>Design Patterns :</h2>
                 <p>
-                    Abstract Fabric
-                    Builder
+                    <strong>Abstract Factory:</strong> The <code>Carte</code> class provides a static method <code>get(id)</code>
+                    to create cards based on their type and identifier.<br><br>
+                    <strong>Builder:</strong> The <code>CartePokemon</code> and <code>Attaque</code> classes are built step by step
+                    using methods to configure their attributes.<br><br>
+                    <strong>Strategy:</strong> Different Pokémon attacks implement the <code>Attaque</code> interface,
+                    allowing the attack behavior to change dynamically.<br><br>
+                    <strong>Composite:</strong> <code>Joueur</code> and <code>Pokemon</code> contain collections of cards
+                    and attacks that are handled uniformly.<br><br>
+                    <strong>Template Method:</strong> <code>CartePokemonBase</code> and <code>CartePokemonEvolution</code>
+                    define abstract methods <code>jouer()</code> and <code>peutJouer()</code> that subclasses implement.
                 </p>
             </div>
         </article>
 
         <article class="descriptor">
+            <img src="static/img/Illustrations_Projets/tcgtest.png" style="width: 40vw">
             <div>
                 <h2>Unit Tests :</h2>
                 <p>
-                    .
+                    We used unit tests throughout the project to make sure the game worked correctly.
+                    I focused on testing the core mechanics, card interactions, and player actions.
+                    Writing and running these tests helped us catch bugs early and gave me confidence that the system behaved as expected while developing new features.
                 </p>
             </div>
         </article>
 
         <article class="descriptor">
             <div>
-                <h2>JavaFX :</h2>
+                <h2>JavaFX:</h2>
                 <p>
-                    .
+                    The user interface was developed using JavaFX, providing opportunities to experiment with layout management, event handling, and scene control.
+                    This work allowed for creating an interactive and visually organized application while maintaining clean code structure and responsiveness.
+                    It was a great way to apply practical knowledge of JavaFX and user interface design.
+                </p>
+            </div>
+        </article>
+        <article class="descriptor">
+            <img src="static/img/Illustrations_Projets/tcguml.png" style="width: 30vw" alt="UML diagram of the project">
+            <div>
+                <h2>Analysis and Design:</h2>
+                <p>
+                    The project included a UML diagram to guide students through the development process.
+                    In parallel, classes on UML and software design provided practical experience in creating and interpreting diagrams, helping to better plan and understand the structure of the application.
                 </p>
             </div>
         </article>
     </section>
-
-
-
 </main>
 
 <footer>
