@@ -21,13 +21,19 @@ section h1 {
     padding: 3vw;
     margin: auto;
 }
+.imgMob {
+    width: 10vw;
+    image-rendering: pixelated;
+}
 
-.descriptor img{
+.descriptor img:not(.imgMob){
     width: 15vw;
     margin-block: auto;
     border-radius:1rem;
     margin-right: 2vw;
 }
+
+
 
 .descriptor div{
     background: rgba(0,0,0,0.3);
@@ -37,3 +43,4 @@ section h1 {
     width: 100%;
     margin-block: 0;
 }
+
