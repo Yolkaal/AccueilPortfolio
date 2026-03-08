@@ -1,0 +1,21 @@
+main {
+    margin: auto;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+article {
+    margin: 0 4vw 5vw 5vw;
+    padding: 2rem;
+    border-left: 2px solid var(--color-primary);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.MainText h2{
+    background: var(--title-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
