@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="static/css/carroussel.css">
 </head>
 <body>
+
 <header>
     <div id="titre">
         <img src="./static/img/logo%20yolkaal's%20shelter.png" alt="logo lounge" id="logo_lounge">
         <h1>Yolkaal's Shelter</h1>
     </div>
-    <nav id="menu">
 
+    <nav id="menu">
         <div class="titre_menu">
             <a href="index.html" class="menu__link">Home</a>
         </div>
@@ -34,53 +35,72 @@
         <div class="titre_menu">
             <a href="me.htm" class="menu__link">Me</a>
         </div>
-
     </nav>
 </header>
 
 <main>
 
     <section>
-        <H1>Fate Of The Click V1</H1>
-        <article>
-            <div class="carousel">
-                <div class="slides" id="slides">
-                    <img src="static/img/Illustrations_Projets/fateofclickcover.png">
-                    <img src="static/img/Illustrations_Projets/fateofclickMenu.png">
-                    <img src="static/img/Illustrations_Projets/fateofclickig.png">
-                    <img src="static/img/Illustrations_Projets/fateofclickendgame.png">
-                </div>
 
-                <button class="prev buttonCarroussel" onclick="prevSlide()">❮</button>
-                <button class="next buttonCarroussel" onclick="nextSlide()">❯</button>
-            </div>
-        </article>
+        <h1>Simulation Engine</h1>
+
         <article class="descriptor">
-            <img src="static/img/Illustrations_Projets/cgj26affiche.jpg">
+            <img src="static/img/Illustrations_Projets/engine.png">
+
             <div>
-                <h2>Context and project's presentation</h2>
+                <h2>Context and project presentation</h2>
+
                 <p>
-                    This project was made for the Code Game Jam 2026.
-                    With my team composed of 4 friends in first year of IT, we had 30 hours to create a game from scratch on the theme "do clicks" or "click party".
-                    We decided to make a game about a folder named Foldy. The goal is to survive to waves of mouse pointers which want to click on you and discover your files.
+                    This personal project consists of developing a custom game engine written in Java.
+                    The goal is to build a technical foundation for a future realistic car simulation.
+                    <br><br>
+                    The engine is designed to interact with the Vulkan API in order to achieve modern
+                    rendering performance and to learn low-level graphics programming.
                 </p>
             </div>
-
         </article>
 
         <article class="descriptor">
             <div>
-                <h2>Enemies and bosses</h2>
+                <h2>Main objectives</h2>
+
                 <p>
-                    Clippy
-                    Sniper Cursor
-                    Classic Cursor
+                    • Learn how modern rendering pipelines work<br>
+                    • Build a modular engine architecture<br>
+                    • Implement physics systems for vehicle simulation<br>
+                    • Create a rendering system based on Vulkan<br>
+                    • Prepare the foundation for a realistic driving simulator
                 </p>
             </div>
         </article>
+
+        <article class="descriptor">
+            <div>
+                <h2>Technologies</h2>
+
+                <p>
+                    • Java<br>
+                    • Vulkan API<br>
+                    • LWJGL<br>
+                    • Object-oriented engine architecture
+                </p>
+            </div>
+        </article>
+
+        <article class="descriptor">
+            <div>
+                <h2>Status</h2>
+
+                <p>
+                    The project is actually in an early development phase.
+                    Showcase will be available soon.
+                </p>
+            </div>
+        </article>
+
+
+
     </section>
-
-
 
 </main>
 
@@ -88,13 +108,16 @@
     <div>
         © <span id="year"></span> Gonzalez Angelo. All right reserved.
     </div>
+
     <div>
         <a>
             Contact
         </a>
     </div>
 </footer>
+
 </body>
 
 <script src="static/js/carroussel.js"></script>
+
 </html>
