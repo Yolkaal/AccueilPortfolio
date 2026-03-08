@@ -2,3 +2,22 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+h2 {
+    text-align: center;
+    font-size: 2vh;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: solid 2px var(--color-primary);
+    border-radius: 50px 50px 50px 50px;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    padding: 1vw;
+}
+article{
+    margin: auto;
+}
